@@ -1,0 +1,862 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #111;
+    color: #fff;
+}
+
+/* <!------------------------------------------------- header ------------------------------------------------------- */
+
+
+.header {
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    padding: 25px 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background: #181818;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    color: #ff8c32;
+    font-size: 38px;
+}
+
+.logo h2 {
+    color: #ff8c32;
+    font-size: 28px;
+}
+
+.logo span {
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    letter-spacing: 5px;
+}
+
+/* NAV */
+
+nav ul {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    list-style: none;
+    display: flex;
+    gap: 86px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #ff8c32;
+}
+
+/* CART */
+
+.cart {
+    color: #fff;
+    position: relative;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+
+.cart a:hover i {
+    color: #ff8c32;
+
+}
+
+.cart i {
+    color: white;
+}
+
+.cart span {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background: #ff8c32;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: #111 solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* ------------------------------------------------- Form IMG ------------------------------------------------------- */
+
+.contactform .loginimg img {
+    margin-top: 100px;
+    width: 100%;
+    height: 730px;
+    opacity: 0.6;
+}
+
+
+/* ------------------------------------------------- Form ------------------------------------------------------- */
+
+.contactform .form {
+    position: absolute;
+    top: 195px;
+    right: 280px;
+    width: 430px;
+    height: 550px;
+    border: 1px solid #ff8c32;
+    border-radius: 5px;
+    padding: 25px;
+    color: white;
+    background: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 2px #ff8c32;
+}
+
+.contactform .form h2 {
+    width: 100%;
+    color: #ff8c32;
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+.contactform .form p {
+    font-size: 16px;
+    margin-top: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.7px;
+}
+
+.contactform .form input {
+    display: block;
+    width: 320px;
+    height: 40px;
+    margin: 35px auto;
+    border-right: 1px solid #ff8c32;
+    border-bottom: 1px solid #ff8c32;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.contactform .form input:focus {
+    outline: none;
+}
+
+.contactform .form input::placeholder {
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Button */
+
+.b2 {
+    width: 320px;
+    height: 40px;
+    margin: 27px auto;
+    display: block;
+    background: #ff8c32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.b2 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.b2:hover {
+    background: #af5c14;
+    color: #fffffe;
+}
+
+.b2:active {
+    background: #ff882d;
+    color: white;
+    transform: scale(0.98);
+}
+
+/* Text */
+
+.contactform .form .link {
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactform .form .sign {
+    display: block;
+    margin-top: 8px;
+    color: #ff8c32;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contactform .form .liw {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.contactform .form .sign:hover {
+    color: rgb(57, 57, 252);
+    text-decoration: underline;
+}
+
+/* Icons */
+
+.icon1 {
+    margin-top: 20px;
+}
+
+.icon1 a {
+    text-decoration: none;
+}
+
+.icon1 i {
+    color: white;
+    font-size: 25px;
+    margin: 0 15px;
+    transition: .3s;
+}
+
+.icon1 i:hover {
+    color: #ff8c32;
+}
+
+
+
+/* ------------------------------------------------- FOOTER ------------------------------------------------------- */
+
+
+.footer {
+    border-top: 1px solid #444;
+    background: linear-gradient(135deg, #000000, #414345);
+    color: #fff;
+    padding: 70px 6% 70px;
+}
+
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 420px 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+
+/* ------------------------------------------------- LOGO ------------------------------------------------------- */
+
+
+.logoo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logoo i {
+    font-size: 38px;
+    color: #ff8c32;
+    margin-right: 10px;
+}
+
+.logoo h2 {
+    font-size: 28px;
+    color: #ff8c32;
+    font-weight: 700;
+}
+
+.logoo span {
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+
+.footer-box p {
+    color: #cfcfcf;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+/* ------------------------------------------------- HEADINGS ------------------------------------------------------- */
+
+
+.footer-box h3 {
+    color: #ff8c32;
+    margin-bottom: 22px;
+    font-size: 22px;
+    position: relative;
+}
+
+.footer-box h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 55px;
+    height: 3px;
+    background: #ff8c32;
+}
+
+/* LINKS */
+
+.footer-box ul {
+    list-style: none;
+    padding-top: px;
+}
+
+.footer-box ul li {
+    margin: 14px 0;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: .4s;
+    display: inline-block;
+}
+
+.footer-box ul li a:hover {
+    color: #ff8c32;
+    transform: translateX(8px);
+}
+
+/* HEADER */
+
+.footer-box p i {
+    color: #ff8c32;
+    margin-right: 10px;
+    width: 20px;
+}
+
+/* ICONS */
+
+.social-icons {
+    margin-top: 25px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ff8c32;
+    border-radius: 50%;
+    color: #ffffff;
+    margin-right: 12px;
+    text-decoration: none;
+    transition: .4s;
+    font-size: 18px;
+}
+
+.social-icons a:hover {
+    background: #ff8c32;
+    color: #111;
+    transform: translateY(-6px);
+}
+
+
+/* =========================================================
+   MEDIA QUERY
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ================= HEADER ================= */
+
+    .header {
+        width: 100%;
+        padding: 18x 15;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+
+    /* ================= LOGO ================= */
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo i {
+        font-size: 28px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .logo span {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+        width: auto;
+        margin: 0;
+        padding: 0;
+
+        order: initial;
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 20px;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    nav ul li {
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /* ================= CART ================= */
+
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 25px;
+
+        margin-left: 10px;
+        margin-right: 0;
+
+        padding: 0;
+    }
+
+
+    /* ================= SIGN UP IMAGE ================= */
+
+    .contactform .loginimg img {
+        margin-top: 100px;
+
+        width: 100%;
+        height: 650px;
+
+        object-fit: cover;
+    }
+
+
+    /* ================= SIGN UP FORM ================= */
+
+    .contactform .form {
+        top: 150px;
+
+        right: 50%;
+
+        transform: translateX(50%);
+
+        width: 400px;
+        max-width: 90%;
+
+        height: auto;
+        min-height: 520px;
+
+        padding: 25px;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .contactform .form input {
+        width: 90%;
+        max-width: 320px;
+    }
+
+
+    /* ================= PASSWORD BOX ================= */
+
+    .password-box {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .password-box input {
+        width: 100%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        padding: 50px 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* ================= HEADER ================= */
+
+    .header {
+        width: 100%;
+
+        padding: 12px 15px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+
+    /* ================= LOGO ================= */
+
+    .logo {
+        display: flex;
+
+        align-items: center;
+        justify-content: flex-start;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo i {
+        font-size: 25px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .logo span {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+
+    /* ================= CART ================= */
+
+    .cart {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        font-size: 23px;
+
+        margin-left: auto;
+        margin-right: 0;
+
+        padding: 0;
+    }
+
+
+    /* ================= NAVBAR ================= */
+
+    nav {
+        width: 100%;
+
+        order: 3;
+
+        margin-top: 12px;
+        margin-left: 0;
+
+        padding: 0;
+    }
+
+    nav ul {
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 0;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    nav ul li {
+        white-space: nowrap;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+
+        font-size: 10px;
+
+        padding: 0;
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       SIGN UP IMAGE
+       ===================================================== */
+
+    .contactform .loginimg img {
+        margin-top: 100px;
+
+        width: 100%;
+        height: 620px;
+
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       SIGN UP FORM
+       ===================================================== */
+
+    .contactform .form {
+        top: 135px;
+
+        right: 50%;
+
+        transform: translateX(50%);
+
+        width: 92%;
+        max-width: 360px;
+
+        height: auto;
+        min-height: 500px;
+
+        padding: 20px 15px;
+
+        border-radius: 5px;
+    }
+
+
+    /* ================= FORM HEADING ================= */
+
+    .contactform .form h2 {
+        font-size: 24px;
+    }
+
+
+    /* ================= INPUTS ================= */
+
+    .contactform .form input {
+        width: 100%;
+        max-width: none;
+
+        height: 38px;
+
+        margin: 15px auto;
+
+        font-size: 13px;
+    }
+
+
+    /* ================= PASSWORD BOX ================= */
+
+    .password-box {
+        width: 100%;
+        max-width: none;
+
+        margin: 15px auto;
+    }
+
+    .password-box input {
+        width: 100%;
+        height: 38px;
+    }
+
+
+    /* ================= PASSWORD SHOW/HIDE ================= */
+
+    .toggle-password {
+        right: 10px;
+
+        font-size: 16px;
+    }
+
+
+    /* ================= BUTTON ================= */
+
+    .b2 {
+        width: 170px;
+        height: 40px;
+
+        margin: 25px auto;
+
+        font-size: 14px;
+    }
+
+
+    /* ================= TEXT ================= */
+
+    .contactform .form .link {
+        margin-top: 15px;
+        font-size: 13px;
+    }
+
+    .contactform .form .sign {
+        margin-top: 7px;
+        font-size: 13px;
+    }
+
+    .contactform .form .liw {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+
+    /* ================= SOCIAL ICONS ================= */
+
+    .icon1 {
+        margin-top: 15px;
+    }
+
+    .icon1 i {
+        font-size: 21px;
+        margin: 0 10px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+
+    /* ================= FOOTER LOGO ================= */
+
+    .logoo {
+        margin-bottom: 30px;
+    }
+
+    .logoo i {
+        font-size: 32px;
+    }
+
+    .logoo h2 {
+        font-size: 22px;
+    }
+
+    .logoo span {
+        font-size: 11px;
+        letter-spacing: 3px;
+    }
+
+
+    /* ================= FOOTER TEXT ================= */
+
+    .footer-box p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+
+    /* ================= FOOTER HEADING ================= */
+
+    .footer-box h3 {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+
+    /* ================= FOOTER LINKS ================= */
+
+    .footer-box ul li {
+        margin: 12px 0;
+    }
+
+
+    /* ================= SOCIAL ICONS ================= */
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+
+        font-size: 16px;
+
+        margin-right: 8px;
+    }
+}
