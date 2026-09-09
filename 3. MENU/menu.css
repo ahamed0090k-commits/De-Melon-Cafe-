@@ -355,115 +355,73 @@ h1 {
 }
 
 
-/* ------------------------------------------------- MEDIA QUERY ------------------------------------------------------- */
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
 
-@media (max-width: 768px) {
-
-    /* HEADER */
+/* TABLET */
+@media (max-width: 1024px) {
 
     .header {
-        padding: 15px 20px;
+        padding: 18px 30px;
+    }
+
+    nav ul {
+        gap: 35px;
+        font-size: 15px;
+    }
+
+    .products {
+        width: 92%;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 25px;
+        row-gap: 35px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    /* ================= HEADER ================= */
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        padding: 12px 18px;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         flex-wrap: wrap;
+        gap: 10px;
     }
+
+
+    /* LOGO */
 
     .logo {
         display: flex;
         align-items: center;
+        gap: 7px;
+        flex-shrink: 0;
     }
 
     .logo i {
-        font-size: 28px;
+        font-size: 27px;
     }
 
     .logo h2 {
         font-size: 20px;
-    }
-
-    .logo span {
-        font-size: 11px;
-        letter-spacing: 3px;
-    }
-
-
-    /* NAVBAR */
-
-    nav {
-        width: auto;
-        margin: 0;
-    }
-
-    nav ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        font-size: 11px;
-        letter-spacing: 1px;
-    }
-
-    nav ul li {
-        white-space: nowrap;
-    }
-
-    nav a {
-        display: block;
-    }
-
-
-    /* CART */
-
-    .cart {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 25px;
-        margin-left: 10px;
-    }
-
-
-    /* HEADER IMAGE */
-
-    .headerimg img {
-        padding-top: 100px;
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
-
-
-    /* FOOTER */
-
-    .footer {
-        padding: 50px 25px;
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-}
-
-
-/* ------------------------------------------------- SMALL MOBILE ------------------------------------------------------- */
-
-@media (max-width: 480px) {
-
-    /* HEADER */
-
-    .header {
-        padding: 12px 15px;
-    }
-
-    .logo i {
-        font-size: 25px;
-    }
-
-    .logo h2 {
-        font-size: 18px;
     }
 
     .logo span {
@@ -472,21 +430,50 @@ h1 {
     }
 
 
-    /* NAVBAR */
+    /* CART */
+
+    .cart {
+        margin-left: auto;
+        font-size: 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cart span {
+        width: 18px;
+        height: 18px;
+
+        top: -7px;
+        right: -9px;
+
+        font-size: 10px;
+    }
+
+
+    /* ================= NAVIGATION ================= */
 
     nav {
         width: 100%;
         order: 3;
-        margin-top: 12px;
+
+        margin: 0;
+        padding-top: 8px;
+
+        border-top: 1px solid #333;
     }
 
     nav ul {
         width: 100%;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         gap: 0;
-        font-size: 10px;
+
+        font-size: 12px;
         letter-spacing: 0.5px;
     }
 
@@ -494,75 +481,90 @@ h1 {
         white-space: nowrap;
     }
 
-
-    /* CART */
-
-    .cart {
-        font-size: 23px;
-        margin-left: auto;
+    nav a {
+        display: block;
+        padding: 5px 3px;
     }
 
 
-    /* HEADER IMAGE */
+    /* ================= HEADER IMAGE ================= */
 
     .headerimg img {
-        padding-top: 105px;
+        padding-top: 0;
+
         width: 100%;
         height: 300px;
+
         object-fit: cover;
+
+        display: block;
     }
 
 
-    /* PRODUCTS */
+    /* ================= TITLE ================= */
+
+    h1 {
+        margin-top: 35px;
+        font-size: 30px;
+    }
+
+
+    /* ================= PRODUCTS ================= */
 
     .products {
         width: 94%;
+
         margin: auto;
-        padding-top: 30px;
+        padding-top: 35px;
 
         display: grid;
+
         grid-template-columns: repeat(2, minmax(0, 1fr));
 
-        column-gap: 12px;
+        column-gap: 14px;
         row-gap: 25px;
     }
 
 
-    /* CARD */
+    /* ================= CARD ================= */
 
     .card {
         width: 100%;
         min-width: 0;
+
         padding: 10px;
-        box-sizing: border-box;
 
         display: flex;
         flex-direction: column;
+
+        border-radius: 10px;
     }
 
 
-    /* IMAGE */
+    /* CARD IMAGE */
 
     .card img {
         width: 100%;
-        height: 130px;
+        height: 135px;
+
         object-fit: cover;
+
         display: block;
-        border-radius: 6px;
+
+        border-radius: 7px;
     }
 
 
     /* PRODUCT NAME */
 
     .card h2 {
+        margin-top: 9px;
+        margin-bottom: 5px;
+
         font-size: 15px;
         line-height: 18px;
 
         height: 36px;
-        min-height: 36px;
-
-        margin-top: 8px;
-        margin-bottom: 5px;
 
         overflow: hidden;
     }
@@ -571,13 +573,12 @@ h1 {
     /* DESCRIPTION */
 
     .card p {
+        margin: 5px 0;
+
         font-size: 10px;
         line-height: 14px;
 
         height: 42px;
-        min-height: 42px;
-
-        margin: 5px 0;
 
         overflow: hidden;
     }
@@ -586,17 +587,16 @@ h1 {
     /* PRICE */
 
     .card h3 {
+        margin: 8px 0 10px;
+
         font-size: 17px;
         line-height: 20px;
 
         height: 20px;
-        min-height: 20px;
-
-        margin: 8px 0 10px;
     }
 
 
-    /* BUTTON AREA */
+    /* ================= BUTTONS ================= */
 
     .buttons {
         width: 100%;
@@ -606,21 +606,23 @@ h1 {
         justify-content: space-between;
 
         gap: 5px;
+
+        margin-top: auto;
     }
 
 
-    /* ADD TO CART BUTTON */
+    /* ADD TO CART */
 
     .buttons button {
-        padding: 6px 7px;
+        padding: 6px 8px;
+
         font-size: 9px;
 
         white-space: nowrap;
-        box-sizing: border-box;
     }
 
 
-    /* QUANTITY */
+    /* ================= QUANTITY ================= */
 
     .qty {
         display: flex;
@@ -629,7 +631,6 @@ h1 {
 
         gap: 4px;
     }
-
 
     .qty button {
         width: 24px;
@@ -644,9 +645,8 @@ h1 {
         justify-content: center;
     }
 
-
     .qty span {
-        min-width: 12px;
+        min-width: 14px;
 
         font-size: 12px;
 
@@ -654,15 +654,250 @@ h1 {
     }
 
 
-    /* FOOTER */
+    /* ================= FOOTER ================= */
 
     .footer {
-        padding: 40px 20px;
+        margin-top: 50px;
+        padding: 45px 25px;
+    }
+
+    .footer-container {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .logoo {
+        margin-bottom: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    /* ================= HEADER ================= */
+
+    .header {
+        padding: 10px 14px;
+
+        gap: 8px;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+        gap: 5px;
+    }
+
+    .logo i {
+        font-size: 23px;
+    }
+
+    .logo h2 {
+        font-size: 17px;
+    }
+
+    .logo span {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+
+    /* CART */
+
+    .cart {
+        font-size: 22px;
+    }
+
+
+    /* ================= NAV ================= */
+
+    nav {
+        padding-top: 7px;
+    }
+
+    nav ul {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 4px 1px;
+    }
+
+
+    /* ================= HEADER IMAGE ================= */
+
+    .headerimg img {
+        width: 100%;
+        height: 250px;
+
+        padding-top: 0;
+
+        object-fit: cover;
+    }
+
+
+    /* ================= TITLE ================= */
+
+    h1 {
+        margin-top: 30px;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+
+    /* ================= PRODUCTS ================= */
+
+    .products {
+        width: 94%;
+
+        padding-top: 25px;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+
+    /* ================= CARD ================= */
+
+    .card {
+        padding: 8px;
+
+        border-radius: 8px;
+    }
+
+
+    /* IMAGE */
+
+    .card img {
+        width: 100%;
+        height: 120px;
+
+        object-fit: cover;
+
+        border-radius: 6px;
+    }
+
+
+    /* PRODUCT NAME */
+
+    .card h2 {
+        margin-top: 7px;
+        margin-bottom: 4px;
+
+        font-size: 14px;
+        line-height: 17px;
+
+        height: 34px;
+    }
+
+
+    /* DESCRIPTION */
+
+    .card p {
+        margin: 4px 0;
+
+        font-size: 9px;
+        line-height: 13px;
+
+        height: 39px;
+    }
+
+
+    /* PRICE */
+
+    .card h3 {
+        margin: 7px 0 9px;
+
+        font-size: 16px;
+        line-height: 19px;
+
+        height: 19px;
+    }
+
+
+    /* BUTTONS */
+
+    .buttons {
+        gap: 3px;
+    }
+
+    .buttons button {
+        padding: 5px 6px;
+
+        font-size: 8px;
+    }
+
+
+    /* QUANTITY */
+
+    .qty {
+        gap: 3px;
+    }
+
+    .qty button {
+        width: 22px;
+        height: 22px;
+
+        font-size: 10px;
+    }
+
+    .qty span {
+        min-width: 12px;
+        font-size: 11px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer {
+        margin-top: 40px;
+
+        padding: 40px 18px;
     }
 
     .footer-container {
         grid-template-columns: 1fr;
+
         gap: 30px;
+    }
+
+    .footer-box h3 {
+        font-size: 19px;
+    }
+
+    .footer-box p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+
+        margin-right: 7px;
     }
 
 }
